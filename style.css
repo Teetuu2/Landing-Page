@@ -21,12 +21,18 @@ h1 {
 }
 
 button {
+    border: 2px solid white;
     background-color: #3882f6;
     color: white;
-    border: none;
     height: 30px;
     width: 100px;
     border-radius: 5px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937
 }
 
 .body-one,
@@ -39,7 +45,10 @@ button {
 .body-one,
 .body-two,
 .body-three,
-.body-four,
+.body-four {
+    padding: 64px 256px;
+}
+
 .header,
 .footer {
     padding: 16px 256px;
@@ -62,7 +71,7 @@ button {
 
 .header-right {
     display: flex;
-    gap: 16px;
+    gap: 32px;
     font-size: 18px;
 }
 
@@ -88,24 +97,98 @@ button {
 }
 
 .body-one-right {
-    width: 500px;
+    border: 5px solid #E5E7EB;
+    width: 40%;
     height: 100%;
 }
 
 .body-two {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.body-two-containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-image {
+    border: 3px solid #3882f6;
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+    flex: 1 1 auto;
+}
+
+.container-text {
+    width: 200px;
+    font-size: 18px;
+    color: #1F2937;
+    text-align: justify;
 }
 
 .body-three {
     background-color: #E5E7EB;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.quote {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #1F2937
+}
+
+.quoted {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1F2937
 }
 
 .body-four {
     background-color: white;
 }
 
+.inner-body-four {
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+}
+
+.inner-body-four-text {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 35%;
+}
+
 .footer {
-    height: 100px;
+    height: 50px;
     flex: 0, 0, auto;
     background-color: #1F2937;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
