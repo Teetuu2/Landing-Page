@@ -1,5 +1,7 @@
 # Landing-Page
 Landing Page assignment from TheOdinProject.
+The goal is to create a single web page with html and css from a design template provided by TheOdinProject.
+Flexbox will be the main focus of this project
 
 
 Credits
